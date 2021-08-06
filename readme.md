@@ -33,6 +33,9 @@ migrations 하위 배포스크립트
 배포스크립트에 이름은 컨트랙트이름
 배포타겟 트러플컨픽 networks 필드
 
+배포스크립트 직접 작성, ./contracts
+//ref: https://medium.com/coinmonks/5-minute-guide-to-deploying-smart-contracts-with-truffle-and-ropsten-b3e30d5ee1e
+
 truffle migrate --network development
     network옵션 미기입시 로컬
 truffle migrate --reset
@@ -60,3 +63,18 @@ truffle unbox react
 출금js 스크립트 작성 후
 exec /send)u.js
 
+---
+# todo this time
+react-web3.js
+npm i truffle-contract
+npm i ethereumjs-tx
+
+tx?:eoa의 pk로 서명 매서드 호출
+
+react앱 경우 component did mount, get web3
+
+트러플에서 컴파일한 아티팩트를 임포트
+import SimpleStorage from './contracts/SimpleStorage'
+
+npm run start
+리액트 부트스트랩 사용 화면 구성
